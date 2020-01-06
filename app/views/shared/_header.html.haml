@@ -1,0 +1,22 @@
+%header
+  .content
+    .top-content
+      .top-content__logo
+        %a
+          = image_tag("logosample.png", class:"top-content__logo")
+    .bottom-content
+      .bottom-content__item
+        .bottom-content__item__category
+          %a.bottom-content__item__category__part
+            = icon('fas', 'list', class: 'bottom-content__item__category__part__icon')
+            メニュー
+          = render "shared/menulist"
+      %ul.bottom-content__list
+        %li.bottom-content__list__favorite
+          %a.bottom-content__list__favorite__part
+            = icon('far', 'grin', class: 'bottom-content__list__favorite__part__icon')
+            マイページ
+        %li.bottom-content__list__todo
+          %a.bottom-content__list__todo__part
+            = icon('fas', 'sign-out-alt', class: 'bottom-content__list__todo__part__icon')
+            ログアウト
