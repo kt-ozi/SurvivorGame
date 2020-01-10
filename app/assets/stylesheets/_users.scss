@@ -190,6 +190,7 @@
       cursor: pointer;
       &__part {
         @include aTagSet2;
+        display: none;
         &__icon {
           @include iconSet;
           width: 19px;

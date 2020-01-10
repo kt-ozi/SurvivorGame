@@ -18,5 +18,6 @@
             マイページ
         %li.bottom-content__list__todo
           %a.bottom-content__list__todo__part
-            = icon('fas', 'sign-out-alt', class: 'bottom-content__list__todo__part__icon')
-            ログアウト
+            = link_to destroy_user_session_path, method: :delete, class: 'btn' do
+              = icon('fas', 'sign-out-alt', class: 'bottom-content__list__todo__part__icon')
+              ログアウト
